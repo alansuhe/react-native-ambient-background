@@ -1,6 +1,6 @@
 {
   "name": "react-native-ambient-background",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A background component",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -38,7 +38,8 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
-    "release": "release-it --only-version"
+    "release": "release-it --only-version",
+    "ios": "expo run:ios"
   },
   "keywords": [
     "react-native",

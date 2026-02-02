@@ -1,12 +1,12 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-ambient-background';
+import { ShareButton } from 'react-native-ambient-background';
 
-const result = multiply(3, 7);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Test</Text>
+      <ShareButton />
     </View>
   );
 }
