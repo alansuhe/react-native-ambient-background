@@ -1,2 +1,2 @@
-import ShareButton from "./ShareButton"
-export { ShareButton}
+import { MemodBackground } from "./Background"
+export default MemodBackground

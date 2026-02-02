@@ -1,20 +1,22 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { ShareButton } from 'react-native-ambient-background';
+import Background from 'react-native-ambient-background';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Background
+        variant={'ripple'}
+        speed={0.1}
+        mainColor={'#627fc3'}
+      />
       <Text>Test</Text>
-      <ShareButton />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1
   },
 });
