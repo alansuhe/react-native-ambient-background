@@ -1,14 +1,14 @@
 import { Text, View, StyleSheet } from 'react-native';
-import Background from 'react-native-ambient-background';
+import AmbientBackground from 'react-native-ambient-background';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Background
+      <AmbientBackground
         variant={'ripple'}
         speed={0.1}
-        mainColor={'#627fc3'}
+        mainColor={'#cd6879'}
       />
       <Text>Test</Text>
     </View>
@@ -17,6 +17,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

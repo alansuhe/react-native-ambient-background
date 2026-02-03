@@ -95,8 +95,8 @@ const Background: React.FC<AnimationBackgroundProps> = ({
   );
 
   return (
-    <View style={[styles.container, style]} onLayout={onLayout} {...props}>
-      <Canvas style={StyleSheet.absoluteFill}>
+    <View style={[StyleSheet.absoluteFill, style]} onLayout={onLayout} {...props}>
+      <Canvas style={styles.container}>
         <Fill>
           <Shader source={shaderSource} uniforms={uniforms} />
         </Fill>
@@ -107,7 +107,7 @@ const Background: React.FC<AnimationBackgroundProps> = ({
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, overflow: 'hidden' },
+  container: { flex: 1 },
 });
 
 export const MemodBackground = memo(Background);
