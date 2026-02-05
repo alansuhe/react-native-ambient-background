@@ -324,3 +324,4 @@ half4 main(vec2 fragCoord) {
 };
 
 export type AnimationStyle = keyof typeof Shaders;
+export const AnimationStyles = Object.keys(Shaders) as AnimationStyle[];
