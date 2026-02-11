@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import AmbientBackground, { AnimationStyles, type AnimationStyle } from 'react-native-ambient-background';
 
