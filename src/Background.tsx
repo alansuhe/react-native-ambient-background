@@ -49,7 +49,7 @@ const Background: React.FC<AnimationBackgroundProps> = ({
       false
     );
     return () => cancelAnimation(iTime);
-  }, []);
+  }, [iTime]);
 
   // 恢复你原代码中有效的颜色解析方式
   const colorVec = useMemo<number[]>(() => {
@@ -95,7 +95,11 @@ const Background: React.FC<AnimationBackgroundProps> = ({
   );
 
   return (
-    <View style={[StyleSheet.absoluteFill, style]} onLayout={onLayout} {...props}>
+    <View
+      style={[StyleSheet.absoluteFill, style]}
+      onLayout={onLayout}
+      {...props}
+    >
       <Canvas style={styles.container}>
         <Fill>
           <Shader source={shaderSource} uniforms={uniforms} />

@@ -249,7 +249,7 @@ half4 main(vec2 fragCoord) {
     }
   `)!,
 
-ripple: Skia.RuntimeEffect.Make(`
+  ripple: Skia.RuntimeEffect.Make(`
 uniform float iTime;
 uniform vec3 iMainColor;
 uniform vec2 iResolution;
@@ -319,8 +319,7 @@ half4 main(vec2 fragCoord) {
 
   return half4(color, 1.0);
 }
-  `)!
-
+  `)!,
 };
 
 export type AnimationStyle = keyof typeof Shaders;
